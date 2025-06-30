@@ -1,0 +1,3 @@
+[submodule "gemstone-pqdif"]
+	path = gemstone-pqdif
+	url = git@github.com:secha-project/gemstone-pqdif.git
