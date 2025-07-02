@@ -14,7 +14,7 @@ namespace PQDIFConverter
             string safeDataSourceName = new([
                 .. dataSourceName.Replace(" ", "_").Where(c => !Path.GetInvalidFileNameChars().Contains(c))
             ]);
-            string fileNameBase = $"{safeDataSourceName}_{startTime:yyyy-MM-dd}_{observationIndex:D4}";
+            string fileNameBase = $"{safeDataSourceName}_{startTime:yyyy-MM-ddTHH-mm-ss}_{observationIndex:D4}";
             if (quantityTypeCount > 1)
             {
                 fileNameBase += $"_{quantityType}";
